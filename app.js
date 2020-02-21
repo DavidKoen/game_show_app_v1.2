@@ -13,13 +13,7 @@ start.addEventListener('click', () => {
 
 // Collect the game word.
 function getRandomPhraseAsArray(arr) {
-    randomArray = arr[Math.floor(Math.random() * phrases.length)];
+    characters = arr[Math.floor(Math.random() * phrases.length)].split('');
+    randomArray = characters;
     return randomArray;
 };
-
-// 
-function addPhraseToDisplay(arr){
-    for (let i = 0; i <= phrases.length; i += 1) {
-        list
-    }
-}
