@@ -18,7 +18,6 @@ function getRandomPhraseAsArray(arr) {
      return randomPhrase.split('');
 }
 
-
 // Add letters to the display.
 function addPhraseToDisplay(arr) {
     for (let i = 0; i < arr.length; i += 1) {
@@ -70,7 +69,7 @@ qwerty.addEventListener('click', e=> {
     let letter = document.getElementsByClassName('letter');
     if (show.length === letter.length) {
         overlay.classList.add('win');
-        title.textContent = 'ongratulations! You won!';
+        title.textContent = 'Congratulations! You won!';
         overlay.style.display = 'flex';
     } else if (missed >= 5) {
         overlay.classList.add('lose');
